@@ -25,7 +25,6 @@ class Forca < LimparTela
 
   def inicio_forca
     LimparTela.identificar_os
-    puts @word
     puts @img[@cont]
 
     @esconder.each do |linha| 
