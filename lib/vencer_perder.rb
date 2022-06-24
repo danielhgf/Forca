@@ -9,6 +9,7 @@ module Vencer
   def perdeu?
     if @cont == 0 
       puts "\033[1;31mInfelizmetente você perdeu o jogo\033[;1m"
+      puts "A palavra era: #{@backup}"
       return @venceu = true
     else
       return @venceu = false  

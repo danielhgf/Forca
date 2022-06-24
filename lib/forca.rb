@@ -9,6 +9,8 @@ include DataAPI
 include Vencer
 include Iniciar
 
+perdeu = nil
+
 class Forca < LimparTela
   attr_reader :img, :backup, :esconder,:venceu, :perdeu, :cont, :word, :count
 
@@ -24,6 +26,7 @@ class Forca < LimparTela
   end
 
   def inicio_forca
+    perdeu = @backup
     LimparTela.identificar_os
     puts @img[@cont]
 
